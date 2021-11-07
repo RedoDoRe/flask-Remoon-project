@@ -32,12 +32,18 @@ body {
 	position: relative;
 	top: 50%;
 	left: 50%;
-	width: 200px;
+	width: 300px;
 
 	transform: translate(-50%, -50%);
 	color: rgb(255, 255, 255);
 
 }	
+.logo img {
+	width: 70%;
+	height: 60px;
+}
+
+
 .right {
 	width: 50%;
 	height: 100%;
@@ -105,13 +111,13 @@ form .txt_field {
   background: #2691d9;
   transition: .5s;
 }
-.txt_field input:hover ~ label,
+/*.txt_field input:hover ~ label,*/
 .txt_field input:focus ~ label,
 .txt_field input:valid ~ label{
   top: -5px;
   color: #2691d9;
 }
-.txt_field input:hover ~ span::before,
+/*.txt_field input:hover ~ span::before,*/
 .txt_field input:focus ~ span::before,
 .txt_field input:valid ~ span::before{
   width: 100%;
@@ -142,40 +148,16 @@ input[type='submit']:focus {
 section.signin_more {
 	padding-top: 20px;
 }
-.or {
+.line-or {
 	width:100%; 
 	text-align:center; 
 	border-bottom: 1px solid rgb(220,220,220); 
 	line-height:0.1em; 
 	margin:10px 0 20px;
 }
-.or span{
+.line-or span{
 	 background:#fff;
 	 padding:10px 10px;
-}
-
-.signin_more a{
-	display: inline-block;
-	height: 45px;
-	width: 100%;
-	margin-top:8px;
-	text-decoration: none;
-	text-align: center;
-	font-size: 14px;
-	font-weight: bold;
-	border-radius:25px;
-}
-a.btn_google {
-	border: 2px solid rgb(220, 220, 220);
-}
-
-a.btn_facebook {
-	background-color: #3B5998;
-	color: rgb(255, 255, 255); 
-}
-a.btn_apple {
-	background-color: rgb(0, 0, 0);
-	color: rgb(255, 255, 255);
 }
 
 
