@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+	<div class = 'form-login'>
+		<h1>L O G I N</h1>
+
+		<!-- form login -->
+		<form method = 'POST'>
+			<div class ='signup-link'>
+				Chưa có tài khoản? <a href="/signup">Đăng ký ngay</a>
+			</div>	
+			<br>				
+			<div class = 'txt_field'>
+				<input type="text" name="email" autocomplete="off" required>
+				<span></span>
+				<label>Username</label>
+			</div>
+			<div class = 'txt_field'>
+				<input type="password" name="password" required>
+				<span></span>
+				<label>Password</label>
+			</div>
+
+			<p class="message">{{message}}</p>
+			<input type="submit" value="Login">
+
+			<!-- login with social -->
+			<section  class="signin-social">
+				<p class="line-or"><span>Or</span></p>
+				<a href="#" role='button' class="btn-google">
+					<img src="{{ url_for('static', filename='/img/svg/google24x24.svg')}}"></img>
+					<p>Đăng nhập bằng google</p>
+				</a>
+				<a href="#" role='button' class="btn-facebook">
+					<img src="{{ url_for('static', filename='/img/svg/facebook24x24.svg')}}"></img>
+					<p>Đăng nhập bằng facebook</p>
+				</a>
+				<a href="#" role='button' class="btn-apple">
+					<img src="{{ url_for('static', filename='/img/svg/facebook24x24.svg')}}"></img>
+					<p>Đăng nhập bằng google</p>
+				</a>												
+			</section> 
+		</form>		
+	</div>
+
+{% endblock content %}

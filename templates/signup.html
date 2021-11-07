@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+
+	<div class="form-register">
+		<h1>S I G N U P</h1>
+		<!-- form login -->
+		<form method = 'POST'>
+
+			<div class ='signin-link'>
+				Đã có tài khoản? <a href="/signin">Đăng nhập ngay</a>
+			</div>			
+
+			<div class = 'txt_field'>
+				<input type="text" name="email" autocomplete="off" required>
+				<span></span>
+				<label>Email</label>
+			</div>
+		
+			<div class="name">
+				<div class = 'txt_field'>
+					<input class="firt_name" type="text" name="firt-name" required>
+					<span></span>
+					<label>Firt name</label>
+				</div>
+				<div class = 'txt_field'>
+					<input type="text" name="last-name" required>
+					<label>Last name</label>
+				</div>
+			</div>			
+			<div class = 'txt_field'>
+				<input type="password" name="password" autocomplete="off" required>
+				<label>Password</label>
+			</div>
+
+			<div class="birthday">
+				<div class = 'txt_field '>
+					<input type="text" name="day" autocomplete="off"required>
+					<span></span>
+					<label>Day</label>
+				</div>
+				<div class = 'txt_field'>
+					<input type="text" name="month" autocomplete="off"required>
+					<span></span>
+					<label>Month</label>
+				</div>				
+				<div class="txt_field" >
+					<input type="text" name="year" autocomplete="off" required>
+					<span></span>
+					<label>Year</label>
+				</div>
+			</div>
+			<br>		
+			<p style="font-size: 12px;">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>	
+			<br>
+			<input type="submit" value="Sign up">		
+			<!-- login with social -->
+ 					
+		</form>				
+	</div>
+{% endblock content %}
