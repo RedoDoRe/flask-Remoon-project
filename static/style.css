@@ -1,3 +1,4 @@
+
 body {
 	margin: 0;
 	padding: 0;
@@ -6,6 +7,7 @@ body {
 	background-repeat:  none-repeat;
 	background-size: cover;
 	height: 100vh;
+	background-attachment: fixed;
 	/*overflow: hidden;*/
 }
 .layer {
@@ -18,20 +20,33 @@ body {
 	display: flex;
 	width: 100%;
 	height: 100%;
+	position: absolute;
+
+}
+.left {
+	width: 50%;
+	height: 100%;
+	float: left;
 }
 .logo {
-	margin-top: 225%;
-	margin-left: 250%;
+	position: relative;
+	top: 50%;
+	left: 50%;
 	width: 200px;
+
 	transform: translate(-50%, -50%);
 	color: rgb(255, 255, 255);
 
 }	
-
+.right {
+	width: 50%;
+	height: 100%;
+	float: right;
+}
 .form_login {
-	position: absolute;
+	position: relative;
 	top: 50%;
-	left: 64%;
+	left: 30%;
 	transform: translate(-50%, -50%);
 	width: 500px;
 	height: 630px;
@@ -90,24 +105,18 @@ form .txt_field {
   background: #2691d9;
   transition: .5s;
 }
+.txt_field input:hover ~ label,
 .txt_field input:focus ~ label,
 .txt_field input:valid ~ label{
   top: -5px;
   color: #2691d9;
 }
+.txt_field input:hover ~ span::before,
 .txt_field input:focus ~ span::before,
 .txt_field input:valid ~ span::before{
   width: 100%;
 }
-/*.pass{
-  margin: -5px 0 20px 5px;
-  color: #a6a6a6;
-  cursor: pointer;
-}
-.pass:hover{
-  text-decoration: underline;
-}
-*/
+
 input[type='submit'] {
 	width: 20%;
 	height: 30px;
@@ -176,7 +185,7 @@ a.btn_apple {
   	visibility:hidden; 
   }
   .form_login {
-    left: 50%;
+    left: 0%;
 
   }
 }
