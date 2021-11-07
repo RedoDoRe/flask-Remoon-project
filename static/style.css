@@ -31,7 +31,7 @@ body {
 .logo {
 	position: relative;
 	top: 50%;
-	left: 50%;
+	left: 55%;
 	width: 300px;
 
 	transform: translate(-50%, -50%);
@@ -49,10 +49,10 @@ body {
 	height: 100%;
 	float: right;
 }
-.form_login {
+.form-login {
 	position: relative;
 	top: 50%;
-	left: 30%;
+	left: 28%;
 	transform: translate(-50%, -50%);
 	width: 500px;
 	height: 630px;
@@ -61,18 +61,18 @@ body {
 	box-shadow: 0px 0px 10px 10px rgba(78, 78, 78,0.4);
 }
 
-.form_login h1 {
+.form-login h1 {
 	text-align: left center;
 	color: rgb(0,0,0);
 	font-weight: bold;
 	padding: 50px 0px 0px 70px ;
 
 }
-.form_login form {
+.form-login form {
 	padding: 0 70px; /*top-bottom left-right*/
 	box-sizing: border-box;
 }
-.form_login .signup_link a{
+.form-login .signup_link a{
 	color: #2691d9;
 	text-decoration: none;
 }
@@ -124,7 +124,7 @@ form .txt_field {
 }
 
 input[type='submit'] {
-	width: 20%;
+	width: 25%;
 	height: 30px;
 	border-style: none;
 	border-radius: 15px;
@@ -132,7 +132,7 @@ input[type='submit'] {
 	font-size: 14px;
 	font-weight: bold;
 	color: #e9f4fb;
-	margin-left: 80%;
+	margin-left:75%;
 
 }
 input[type='submit']:hover {
@@ -145,8 +145,10 @@ input[type='submit']:focus {
 
 
 
-section.signin_more {
+section.signin-social {
 	padding-top: 20px;
+	width: 100%;
+	height: 300px;
 }
 .line-or {
 	width:100%; 
@@ -161,13 +163,53 @@ section.signin_more {
 }
 
 
+.signin-social a {
+	display: flex;
+	text-decoration: none;
+	height: 50px;
+	width: 100%;
+	border-radius: 25px;
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+.signin-social a img {
+	padding-left: 80px;
+	padding-right: 20px;
+	width: 26px;
+}
+.signin-social a p {
+	margin: auto;
+	width: 100%;
+
+}
+
+.btn-google {
+	color: rgb(0, 0, 0);
+	border: 1px solid rgb(220, 220, 220) ;
+}
+
+.btn-google:hover {
+	background-color: rgb(245, 245, 245);
+}
+
+.btn-facebook {
+	background-color:#4267B2 ;
+	color: #fff;
+	border: 1px solid #4267B2 ;
+}
+.btn-apple {
+	background-color:#000 ;
+	color: #fff;
+	border: 1px solid #000 ;
+}
+
 
 @media screen and (max-width: 1400px) {
   .left {
   	visibility:hidden; 
   }
-  .form_login {
+  .form-login {
     left: 0%;
-
   }
 }
